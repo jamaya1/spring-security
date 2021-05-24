@@ -1,0 +1,17 @@
+security:
+  oauth2:
+    authorization:
+      check-token-access: isAuthenticated()
+
+server:
+  port: 8088
+
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
